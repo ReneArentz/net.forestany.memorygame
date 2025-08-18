@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Memory Game</string>
+
+    <string name="title_settings_activity">Settings</string>
+
+    <string name="text_yes">Yes</string>
+    <string name="text_no">No</string>
+    <string name="text_ok">OK</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="text_back">Back</string>
+
+    <!-- MainActivity -->
+
+    <string name="main_app_unknown_version">Cannot get current app version.</string>
+
+    <string name="main_return_code_create_error">Could not extract game name from CreateActivity.</string>
+    <string name="main_refresh_question">Quit your current game?</string>
+
+    <string name="main_system_game_constant_animal_easy">Animals_easy</string>
+    <string name="main_system_game_constant_animal_medium">Animals_medium</string>
+    <string name="main_system_game_constant_animal_supreme">Animals_supreme</string>
+    <string name="main_system_game_constant_animal_ultimate">Animals_ultimate</string>
+
+    <string name="main_system_game_animal_easy">Animals_easy</string>
+    <string name="main_system_game_animal_medium">Animals_medium</string>
+    <string name="main_system_game_animal_supreme">Animals_supreme</string>
+    <string name="main_system_game_animal_ultimate">Animals_ultimate</string>
+
+    <string name="main_num_moves_init">%1$s: %2$d x %3$d</string>
+    <string name="main_num_pairs_init">Pairs: 0 / %1$d</string>
+    <string name="main_num_moves_caption">Moves:</string>
+    <string name="main_num_pairs_caption">Pairs:</string>
+
+    <string name="main_already_won">You already won!</string>
+    <string name="main_invalid_move">Invalid move!</string>
+    <string name="main_won_message">You won! Congratulations!</string>
+
+    <string name="main_error_access_game_state">Could not access \'%1$s\'.</string>
+    <string name="main_error_game_not_found">Game \'%1$s\' not found.</string>
+    <string name="main_error_retrieving_game">Error while retrieving game: \'%1$s\'.</string>
+
+    <string name="main_dialog_title_new_size">Select size</string>
+    <string name="main_dialog_title_create">Create memory board - Select size</string>
+
+    <string name="main_dialog_title_delete">Delete game</string>
+    <string name="main_dialog_delete_question">Do you want to delete \'%1$s\'?</string>
+    <string name="main_dialog_game_deleted">Game \'%1$s\' deleted.</string>
+    <string name="main_dialog_game_deleted_error">Error: Could not delete game \'%1$s\'.</string>
+
+    <string name="main_menu_refresh">Refresh</string>
+    <string name="main_menu_play_icon_game">Play Icon game</string>
+    <string name="main_menu_select_game">Select game</string>
+    <string name="main_menu_create_game">Create game</string>
+    <string name="main_menu_delete_game">Delete game</string>
+    <string name="main_menu_settings">Settings</string>
+    <string name="main_menu_information">Information</string>
+
+    <string name="main_layout_num_moves_init">Moves: 0</string>
+    <string name="main_layout_num_pairs_init">Pairs: 0 / 4</string>
+
+    <string name="main_layout_bottom_sheet_dialog_title">Select a game</string>
+    <string name="main_layout_bottom_sheet_dialog_game">Game</string>
+
+    <string name="main_layout_card_image_content_description">card image</string>
+    <string name="main_layout_memory_card_content_description">memory image</string>
+
+    <string name="main_layout_dialog_board_size_easy">Easy (4 x 2)</string>
+    <string name="main_layout_dialog_board_size_medium">Medium (6 x 3)</string>
+    <string name="main_layout_dialog_board_size_supreme">Supreme (6 x 4)</string>
+    <string name="main_layout_dialog_board_size_ultimate">Ultimate (8 x 4)</string>
+
+    <!-- CreateActivity -->
+    <string name="create_toolbar_title">Choose pics (%1$d / %2$d)</string>
+    <string name="create_dialog_title_exists">Already exists</string>
+    <string name="create_dialog_exists_text">A game already exists with the name \'%1$s\'. Please choose another name.</string>
+
+    <string name="create_dialog_title_created">Game created</string>
+    <string name="create_dialog_created_text">Game created successfully! Let\'s play your game \'%1$s\'.</string>
+
+    <string name="create_button_save">Save</string>
+    <string name="create_game_name_hint">Game name (example: \'fun_game\')</string>
+
+    <!-- SettingsActivity -->
+    <string name="settings_category_general">General</string>
+    <string name="settings_general_locale">Language</string>
+
+    <string name="settings_language_changed">Language changed. App will restart in %1$d sec.</string>
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- remember changing colors in net.forestany.mediacollection.main.Util as well -->
+<resources>
+    <!-- forest -->
+    <!--<color name="colorPrimary">#2E7D32</color>
+    <color name="colorPrimaryVariant">#1B5E20</color>
+    <color name="colorSecondary">#8FAE8F</color>
+    <color name="colorBackground">#ECEDE9</color>
+    <color name="colorSurface">#F4F4F0</color>
+    <color name="colorError">#B00020</color>
+
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorOnSecondary">#1A1A1A</color>
+    <color name="colorOnBackground">#1A1A1A</color>
+    <color name="colorOnSurface">#2E2E2E</color>
+    <color name="colorOnError">#FFFFFF</color>-->
+
+    <!-- cyberpunk -->
+    <!--<color name="colorPrimary">#00E676</color>
+    <color name="colorPrimaryVariant">#00B248</color>
+    <color name="colorSecondary">#A0FFE0</color>
+    <color name="colorBackground">#E8FFF4</color>
+    <color name="colorSurface">#F0FFFA</color>
+    <color name="colorError">#FF2E63</color>
+
+    <color name="colorOnPrimary">#0A0A0A</color>
+    <color name="colorOnSecondary">#0A0A0A</color>
+    <color name="colorOnBackground">#1A1A1A</color>
+    <color name="colorOnSurface">#2E2E2E</color>
+    <color name="colorOnError">#FFFFFF</color>-->
+
+    <!-- framework -->
+    <color name="colorPrimary">#198754</color>
+    <color name="colorPrimaryVariant">#0F5132</color>
+    <color name="colorSecondary">#6c757d</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorSurface">#F8F9FA</color>
+    <color name="colorError">#DC3545</color>
+
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
+    <color name="colorOnBackground">#212529</color>
+    <color name="colorOnSurface">#212529</color>
+    <color name="colorOnError">#FFFFFF</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#AFAFAF</color>
+    <color name="progress_none">#F43636</color>
+    <color name="progress_full">#1AFF00</color>
+</resources>

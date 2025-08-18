@@ -1,0 +1,127 @@
+<resources>
+    <style name="Theme.MemoryGame" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary branding color -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
+
+        <!-- Backgrounds and surfaces -->
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="colorOnBackground">@color/colorOnBackground</item>
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorOnSurface">@color/colorOnSurface</item>
+
+        <!-- Error color -->
+        <item name="colorError">@color/colorError</item>
+        <item name="colorOnError">@color/colorOnError</item>
+    </style>
+
+    <!-- Overwrite Material Components Toolbar -->
+    <style name="MemoryGameToolbar" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:colorBackground">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <item name="android:textColorPrimary">@color/colorOnPrimary</item>
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+    </style>
+
+    <!-- overflow menu style for PopupMenu, so there are no blank white spaces at top and bottom -->
+    <style name="OverflowMenuStyle" parent="Widget.MaterialComponents.PopupMenu.Overflow">
+        <item name="android:popupBackground">@null</item>
+    </style>
+
+    <!-- Dialog style for Alerts -->
+    <style name="AlertDialogStyle" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <!-- Background color -->
+        <item name="android:colorBackground">@color/colorError</item>
+
+        <!-- Title and Body text styles -->
+        <item name="materialAlertDialogTitleTextStyle">@style/AlertTitleTextStyle</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/AlertBodyTextStyle</item>
+
+        <!-- Button styles -->
+        <item name="buttonBarPositiveButtonStyle">@style/AlertDialogButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/AlertDialogButton</item>
+    </style>
+
+    <!-- Alert title style -->
+    <style name="AlertTitleTextStyle" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textColor">@color/colorOnError</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Alert body style -->
+    <style name="AlertBodyTextStyle" parent="MaterialAlertDialog.MaterialComponents.Body.Text">
+        <item name="android:textColor">@color/colorOnError</item>
+    </style>
+
+    <!-- Alert button style -->
+    <style name="AlertDialogButton" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/colorOnError</item>
+    </style>
+
+    <!-- Dialog style for Confirms -->
+    <style name="ConfirmDialogStyle" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <!-- Background color -->
+        <item name="android:colorBackground">@color/colorPrimaryVariant</item>
+
+        <!-- Title and Body text styles -->
+        <item name="materialAlertDialogTitleTextStyle">@style/ConfirmTitleTextStyle</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/ConfirmBodyTextStyle</item>
+
+        <!-- Button styles -->
+        <item name="buttonBarPositiveButtonStyle">@style/ConfirmDialogButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/ConfirmDialogButton</item>
+    </style>
+
+    <!-- Confirm title style -->
+    <style name="ConfirmTitleTextStyle" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textColor">@color/colorOnPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Confirm body style -->
+    <style name="ConfirmBodyTextStyle" parent="MaterialAlertDialog.MaterialComponents.Body.Text">
+        <item name="android:textColor">@color/colorOnPrimary</item>
+    </style>
+
+    <!-- Confirm button style -->
+    <style name="ConfirmDialogButton" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/colorOnPrimary</item>
+    </style>
+
+    <!-- Dialog style for Selections -->
+    <style name="SelectionDialogStyle" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <!-- Background color -->
+        <item name="android:colorBackground">@color/colorSurface</item>
+
+        <!-- Title and Body text styles -->
+        <item name="materialAlertDialogTitleTextStyle">@style/SelectionTitleTextStyle</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/SelectionBodyTextStyle</item>
+
+        <!-- Button styles -->
+        <item name="buttonBarPositiveButtonStyle">@style/SelectionDialogButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/SelectionDialogButton</item>
+    </style>
+
+    <!-- Selection title style -->
+    <style name="SelectionTitleTextStyle" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textColor">@color/colorOnSurface</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Selection body style -->
+    <style name="SelectionBodyTextStyle" parent="MaterialAlertDialog.MaterialComponents.Body.Text">
+        <item name="android:textColor">@color/colorOnSurface</item>
+    </style>
+
+    <!-- Confirm button style -->
+    <style name="SelectionDialogButton" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/colorOnSurface</item>
+    </style>
+</resources>

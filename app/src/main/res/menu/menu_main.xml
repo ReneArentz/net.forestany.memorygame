@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mI_refresh"
+        android:icon="@drawable/ic_refresh"
+        android:title="@string/main_menu_refresh"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/mI_icon_game"
+        android:icon="@drawable/ic_game"
+        android:title="@string/main_menu_play_icon_game"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/mI_select_game"
+        android:icon="@drawable/ic_play"
+        android:title="@string/main_menu_select_game"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/mI_create_game"
+        android:icon="@drawable/ic_add"
+        android:title="@string/main_menu_create_game"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/mI_delete_game"
+        android:icon="@drawable/ic_delete"
+        android:title="@string/main_menu_delete_game"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/mI_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/main_menu_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/mI_info"
+        android:icon="@drawable/ic_info"
+        android:title="@string/main_menu_information"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/gameTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="?attr/colorOnSurface"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:lineSpacingExtra="4dp"
+        android:text="@string/main_layout_bottom_sheet_dialog_game" />
+
+</LinearLayout>
