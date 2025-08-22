@@ -1,5 +1,8 @@
 package net.forestany.memorygame
 
+// android studio: collapse all methods: ctrl + shift + * and then 1 on numpad
+// android studio: expand all with ctrl + shift + numpad + several times
+
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
