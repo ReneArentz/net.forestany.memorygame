@@ -1,0 +1,1 @@
+A fun and private memory game where you match pairs of images - using built-in icons, animals, or your own photos.

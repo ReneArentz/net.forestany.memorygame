@@ -8,12 +8,12 @@ import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import android.content.pm.PackageManager
-import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.view.ViewGroup
 import android.widget.RadioGroup
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -29,7 +29,6 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.github.jinatonic.confetti.CommonConfetti
 import com.google.android.material.animation.ArgbEvaluatorCompat
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.squareup.picasso.Picasso
@@ -51,6 +50,7 @@ import java.util.UUID
 import kotlin.system.exitProcess
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var mainActivityViewGroup: ViewGroup
     private lateinit var rV_board: RecyclerView
     private lateinit var tV_numMoves: TextView
     private lateinit var tV_numPairs: TextView
@@ -102,6 +102,8 @@ class MainActivity : AppCompatActivity() {
             setSupportActionBar(toolbar)
             supportActionBar?.setDisplayHomeAsUpEnabled(false) /* standard back/home button */
             supportActionBar?.title = getString(R.string.app_name)
+
+            mainActivityViewGroup = findViewById(R.id.main)
 
             // deactivate standard back button
             onBackPressedDispatcher.addCallback(
@@ -310,10 +312,7 @@ class MainActivity : AppCompatActivity() {
 
             if (memoryGame.haveWonGame()) {
                 notifySnackbar(message = getString(R.string.main_won_message), view = findViewById(android.R.id.content), length = com.google.android.material.snackbar.Snackbar.LENGTH_LONG)
-                CommonConfetti.rainingConfetti(findViewById(android.R.id.content), intArrayOf(Color.YELLOW, Color.GREEN, Color.MAGENTA, Color.BLUE)).oneShot()
-                android.os.Handler(android.os.Looper.getMainLooper()).postDelayed({
-                    CommonConfetti.rainingConfetti(findViewById(android.R.id.content), intArrayOf(Color.YELLOW, Color.GREEN, Color.MAGENTA, Color.BLUE)).oneShot()
-                }, 500)
+                runConfettiView()
             }
 
             memoryGame.saveGameState(this)
@@ -596,6 +595,27 @@ class MainActivity : AppCompatActivity() {
             .setPositiveButton(getString(R.string.text_ok)) { _, _ ->
                 positiveClickListener.onClick(null)
             }.show()
+    }
+
+    private fun runConfettiView(confettiCount: Int = 100) {
+        val confettiView = ConfettiView(this, confettiCount = confettiCount)
+
+        mainActivityViewGroup.addView(
+            confettiView,
+            ViewGroup.LayoutParams.MATCH_PARENT,
+            ViewGroup.LayoutParams.MATCH_PARENT
+        )
+
+        confettiView.onFinished = {
+            mainActivityViewGroup.removeView(confettiView)
+        }
+
+        // remove confetti after 6 seconds
+        confettiView.postDelayed({
+            if (confettiView.parent != null) {
+                mainActivityViewGroup.removeView(confettiView)
+            }
+        }, 6000)
     }
 
     private fun initSettings() {

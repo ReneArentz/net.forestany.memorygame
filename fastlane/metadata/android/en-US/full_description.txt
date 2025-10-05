@@ -1,14 +1,3 @@
-# Memory Game Android Project
-
-A fun and private memory game where you match pairs of images - using built-in icons, animals, or your own photos.
-
-*net.forestany.memorygame*  
-*must use JDK 21 for compilation*
-
----
-
-## Description
-
 This is a classic memory card matching game designed for fun, focus, and privacy. The goal is simple: find all matching pairs of pictures as quickly as you can!
 
 You can choose from several predefined image sets, including colorful icons and cute animal pictures, or create your own custom memory games using photos from your device.
@@ -24,17 +13,3 @@ Features:
 - 100% offline and privacy-friendly (no server, no data collection)
 - Four difficulty levels for all skill ranges
 - Built with Android (Java 21 + Kotlin)
-
----
-
-## Tech Stack
-
-- Android: Tested Android 36, Minimum Android 29
-- Language: Kotlin
-- IDE: Android Studio Narwhal for Linux | 2025.1.1 Patch 1
-
----
-
-## License
-
-This project is open source under the GNU GPL v3 license — feel free to host, modify, and improve it while maintaining attribution.
